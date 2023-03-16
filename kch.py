@@ -7,6 +7,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn import model_selection
 import streamlit as st
+import nltk
+nltk.download('stopwords')
 
 
 def clean_text(text):
